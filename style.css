@@ -1,12 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
-body {
+body, html {
     width: 100%;
     height: 100%;
-    background-color: #E74E74;
+    background-image: url(https://dals0gb6i1pll.cloudfront.net/img/banner-mobile-buser.e1bda3c.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
 
@@ -14,24 +23,54 @@ body {
     width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
 }
 
 .cabecalho {
-    height: 60px;
+    max-height: 70px;
+    height: 15%;
     background-color: whitesmoke;
 }
+
 .container-busca {
+    height: 70%; /* remover isso aqui depois*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
 
+.titulo, .subtitulo {
+    background-color: transparent;
+    color: white;
+}
 
+.titulo {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.3;
+    text-transform: uppercase;
+    display: inline;
+    padding: 24px;
+}
+
+.subtitulo {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    padding: 0 24px 24px 24px;
 }
 
 .buscador {
-    height: calc(100vh - 120px);
+    width: 90%;
+    height: 70%;
+    background-color: white;
+    border-radius: 6px;
 }
 
 .menu-footer {
-    height: 60px;
+    max-height: 70px;
+    height: 15%;
     background-color: whitesmoke;
     align-self: auto;
 }
