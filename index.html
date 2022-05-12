@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Buscador Buser</title>
 </head>
-<body>
+<body>                          
     <div class="wrapper">
         
         <div class="cabecalho">
@@ -21,12 +21,20 @@
         </h2>
         <div class="container-busca">
             <div class="buscador">
-
+                <form action="/index.html">
+                    <label for="origem">Saindo de</label>
+                    <input type="text" name="cidade_origem" id="origem" placeholder="Digite uma cidade de partida">
+                    <label for="destino">Indo para</label>
+                    <input type="text" name="cidade_origem" id="destino" placeholder="Digite uma cidade de ida">
+                    <label for="data_ida">Data de ida</label>
+                    <input type="date" name="data_ida" id="data_ida" class="input_data" placeholder="Ida">
+                    <label for="data_volta">Data de volta</label>
+                    <input type="date" name="data_volta" id="data_volta" class="input_data" placeholder="Ida">
+                    <button type="submit">Buscar</button>
+                </form>
             </div>
         </div>
         <div class="menu-footer"></div>
-
     </div>
-
 </body>
 </html>
